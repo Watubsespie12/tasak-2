@@ -1,0 +1,279 @@
+/*
+ITEM number 1
+*/
+#include<iostream>
+using namespace std;
+int main(){
+	
+	char Package;
+	int Bill;
+	int Hours;
+	
+	cout<<" Please, enter the Package: "; cin>>Package;
+	cout<<" Please, enter number of Hours: "; cin>>hours;
+	
+	
+	switch(package){
+		case 'a':
+		case 'A':
+			Bill = 995;
+			if(Hours > 10){
+				Bill = (Hours - 10 ) * 20;
+			}
+			break;
+		case 'b':
+		case 'B':
+			bill = 1495;
+			if(hours > 20){
+				Bill = (Hours - 20 ) * 10;
+			} 	 	
+			break;
+		case 'c':
+		case 'C':
+			Bill = 1995;
+			break;
+		default:
+			cout<<"Invalid";
+	}
+	
+	
+	cout<<"The Total Bill Is: "<<Bill;
+        
+        _getch();
+	return 0;
+}
+
+
+
+
+/*
+ITEM 2
+*/
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int PrevGallon, CurrGallon;
+	float Bill;
+	float Charge = 1.10;
+	float LateCharge = 20;
+	
+	cout<<"Enter the Current Gallon Consumption: "; cin>>CurrGallon;
+	cout<<"Enter the Previous Gallon Consumption: "; cin>>PrevGallon;
+	
+	
+	Bill = 35;
+	Bill += CurrGallon * Charge;
+	//bill = Bill + CurrGallon * Charge;
+	if(prev_gallon > 0){
+		Bill += LateCharge;
+	}
+	//OUTPUT
+	
+	cout<<"THE TOTAL WATER BILL IS: "<<bill;
+	
+        _getch();
+        Return 0;
+}
+
+
+/*
+Item 3
+*/
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+using namespace std;
+int main(){
+	
+	float X;
+	int Y;
+	float V;
+	float z = 2.5;
+	 
+	 cout<<"Please, enter the value of y: "; cin>>Y;
+	 cout<<"Please, enter the value of x: "; cin>>X;
+	 
+		
+	switch(X){
+		case 1:
+			if(Y > 1 && Y < 5){
+				V = X*Y*Z;
+			}
+			else if(Y >= 5){
+				V = X + (Y/Z);
+			}
+			break;
+		case 2:
+			if(Y<= 5){
+				V = fabs((X - Y)/Z);
+			}
+			else if(Y > 5){
+				V = X - sqrt(Y+Z);
+			}
+			break;
+		default: 
+			V = X+Y+Z;
+	}
+	
+	//OUTPUT
+	cout<<fixed<<setprecision(2);
+	cout<<setw(10)<<setfill('_')<<V;
+       
+        _getch();
+        Return 0;
+}
+
+/*
+Item 4
+*/
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int Num1, Num2, Num3, Largest;
+	
+	cout<<"Enter value of 1st Number: "; cin>>Num1;
+	cout<<"Enter value of 2nd Number: "; cin>>Num2;
+	cout<<"Enter value of 3rd Number: "; cin>>Num3;
+
+	
+	if(Num1 > Num2){
+		Largest = num1;
+	}
+	else if(Num2 > Num1){
+		Largest = Num2;
+	}
+
+	if(Largest > Num3){
+		Largest = Largest;
+	}
+	else{
+		Largest = Num3;
+	}
+	
+	cout<<"THE LARGEST NUMBER AMONG THE 3 is : "<<Largest;
+_getch();
+Return 0;
+	
+}
+
+
+/*
+ITEM # 5
+*/
+#include<iostream>
+using namespace std;
+int main(){
+	 
+	int Multiplier = 1;
+	int num = 1;
+	
+	while(num <= 30){
+		cout<<num;
+		num = multiplier;
+		
+		if(Num >= 10){
+			Multiplier = 2;
+		}
+		
+		if(Num <= 30){
+			cout<<",";
+		}
+	_getch();
+	return 0;
+}
+/*
+ITEM # 6
+*/
+#include<iostream>
+using namespace std;
+int main(){
+	int Temp;
+        int Num1 = 0;
+	int Num2 = 1;
+	
+	
+	
+	cout<<Num1<<","<<Num2<<",";
+	for(int i = 3; i<=22; i++){
+		Num1 = Num2;
+		Num2 = Temp;
+		Temp = Num1 + Num2;
+		cout<<Temp;
+		
+		if(i < 22){
+			cout<<",";
+		}
+	_getch();
+	return0;
+}
+
+/*
+ITEM #7
+*/
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int Num1,Sum;
+	
+	cout<<"ENTER a number: "; cin>>Num1;
+	
+	while(Num1 > 0){
+	sum = 0;
+		
+	for(int i=1; i<=Num1; i++){
+		sum += i;
+	}
+	
+	cout<<"Your sum from 1 to "<<Num1<<" is: "<<Sum<<endl;
+	
+	cout<<"ENTER a number: "; cin>>Num1;
+	}
+	
+	cout<<"Thank you!";
+	_getch();
+	return 0;
+}
+
+
+/*
+ITEM #8
+*/
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int Num;
+	cout<<"Insert a number: "; cin>>Num;
+	
+	
+	for(int i =1; i<=100; i++){
+		
+		cout<<i<<"*"<<Num<<" = "<<i*Num<<endl;
+	
+	_getch();
+	return0;
+}
+/*
+ITEM #9
+*/
+#include<iostream>
+using namespace std;
+int main(){
+	int Column, Rows;
+
+	cout<<"Enter the columns: "; cin>> Column;	
+	cout<<"Enter the rows: "; cin>> Rows;
+	
+	
+	for(int i=1; i<=Rows; i++){
+		//cout<<"*"<<endl;
+		for(int j=1; j<=Column; j++){
+			cout<<"*";
+		}
+		cout<<endl;
+	_getch();
+	return0;
+}
